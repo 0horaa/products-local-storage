@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+:root {
+    --light: #f8f8f8;
+    --dark: #333;
+    --danger: #ff4444;
+
+    --font-medium: 110%;
+    --dark-border: 1px solid #333;
+    --button-padding: 0.8rem 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+}
+
+h2.title {
+    margin-bottom: 1rem;
+}
+
+#product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: var(--font-medium);
+}
+
+.form-group input {
+    padding: 0.5rem 1rem;
+    border: var(--dark-border);
+    border-radius: 8px;
+    font-size: var(--font-medium);
+}
+
+.button {
+    font-size: var(--font-medium);
+    align-self: center;
+    background: var(--dark);
+    color: var(--light);
+    padding: var(--button-padding);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: filter 0.2s ease;
+    width: 50%;
+}
+
+#table-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#table-container table {
+    border: var(--dark-border);
+    width: 50%;
+    border-spacing: 0;
+}
+
+#table-container table td.table-row {
+    border: var(--dark-border);
+    padding: 0.6rem 1rem;
+    text-align: center;
+}
+
+.danger-button {
+    background-color: var(--danger);
+    color: var(--light);
+    border: none;
+    padding: var(--button-padding);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: filter 0.2s ease;
+}
+
+.button:hover, .danger-button:hover {
+    filter: brightness(0.8);
+}
